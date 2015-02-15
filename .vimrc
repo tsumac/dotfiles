@@ -1,4 +1,4 @@
-"SET OPTION
+" SET OPTION
     set nu
     set showmode
     set title
@@ -15,7 +15,6 @@
     set ignorecase
     set smartcase
     set hlsearch
-    set clipboard=unnamed,autoselect
     set confirm
 " NEO BUNDLE PLUGINS
     set runtimepath+=~/.vim/bundle/neobundle.vim/
@@ -45,11 +44,11 @@
     nnoremap vl <S-v>
     nnoremap vb <C-v>
     nnoremap vv v
-" CUT & COPY LINE
+" CUT & COPY & PASTE LINE
     nnoremap D <S-v>x
     nnoremap C <S-v>y
 " QUIT & SAVE
-    nnoremap Q :q!<Enter>
+    nnoremap Q :q<Enter>
     nnoremap W :w!<Enter>
     nnoremap QW :wq!<Enter>
 " JUMP
@@ -73,8 +72,7 @@
     inoremap <Tab> <C-p>
 " REUNDO
     nnoremap U <C-R>
-" TEXT OBJECTS
-    nnoremap S di
+
 
 
 
