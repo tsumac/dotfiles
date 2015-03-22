@@ -16,6 +16,7 @@
     set smartcase
     set hlsearch
     set confirm
+    set clipboard+=unnamed
 " NEO BUNDLE PLUGINS
     set runtimepath+=~/.vim/bundle/neobundle.vim/
     call neobundle#begin(expand('~/.vim/bundle/'))
@@ -24,8 +25,9 @@
         NeoBundle 'mattn/emmet-vim'
         NeoBundle 'scrooloose/syntastic'
         NeoBundle 'guns/vim-clojure-static'
-    call neobundle#end()
-    filetype plugin indent on
+        NeoBundle 'vim-ruby/vim-ruby'
+        call neobundle#end()
+        filetype plugin indent on
     NeoBundleCheck
 " SYNTAX
     syntax on
