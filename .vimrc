@@ -44,6 +44,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'Yggdroot/indentLine'
 call plug#end()
 
+" Setting for Yggdroot/indentLine
 let g:indentLine_faster = 1
 let g:indentLine_char = '|'
+let g:indentLine_leadingSpaceEnabled = 1
+let g:indentLine_leadingSpaceChar = '.'
 
