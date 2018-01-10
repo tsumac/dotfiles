@@ -8,6 +8,7 @@ if has('vim_starting')
     call plug#begin('~/.vim/plugged')
         Plug 'Yggdroot/indentLine'
         Plug 'ctrlpvim/ctrlp.vim'
+        Plug 'mattn/emmet-vim'
         Plug 'rking/ag.vim'
         Plug 'tomasr/molokai'
     call plug#end()
@@ -52,6 +53,17 @@ syntax enable
 
 inoremap <C-e> <esc>
 vnoremap <C-e> <esc>
+
+inoremap { {}<LEFT>
+inoremap [ []<LEFT>
+inoremap ( ()<LEFT>
+inoremap " ""<LEFT>
+inoremap ' ''<LEFT>
+vnoremap { "zdi^V{<C-R>z}<ESC>
+vnoremap [ "zdi^V[<C-R>z]<ESC>
+vnoremap ( "zdi^V(<C-R>z)<ESC>
+vnoremap " "zdi^V"<C-R>z^V"<ESC>
+vnoremap ' "zdi'<C-R>z'<ESC>
 
 colorscheme molokai
 
