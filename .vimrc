@@ -1,3 +1,18 @@
+if has('vim_starting')
+    if !filereadable(expand("~/.vim/autoload/plug.vim"))
+        echo "install vim-plug..."
+        :call system("mkdir -p ~/.vim/autoload")
+        :call system("curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim")
+    endif
+
+    call plug#begin('~/.vim/plugged')
+        Plug 'Yggdroot/indentLine'
+        Plug 'ctrlpvim/ctrlp.vim'
+        Plug 'rking/ag.vim'
+        Plug 'tomasr/molokai'
+    call plug#end()
+endif
+
 set autoindent
 set autoread
 set backspace=indent,eol,start
@@ -29,24 +44,17 @@ set virtualedit=onemore
 set whichwrap=h,l
 set wildmode=list:longest
 set wrapscan
+set t_Co=256
 
 syntax on
 syntax enable
 
-colorscheme molokai
-set t_Co=256
-
 inoremap <C-e> <esc>
 vnoremap <C-e> <esc>
 
-call plug#begin('~/.vim/plugged')
-    Plug 'ctrlpvim/ctrlp.vim'
-    Plug 'Yggdroot/indentLine'
-    Plug 'rking/ag.vim'
-call plug#end()
+colorscheme molokai
 
 let g:indentLine_faster = 1
-let g:indentLine_char = '|'
 let g:indentLine_leadingSpaceEnabled = 1
 let g:indentLine_leadingSpaceChar = '.'
 
