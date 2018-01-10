@@ -1,8 +1,8 @@
 if has('vim_starting')
     if !filereadable(expand("~/.vim/autoload/plug.vim"))
-        echo "install vim-plug..."
+        echo "Install vim-plug..."
         :call system("mkdir -p ~/.vim/autoload")
-        :call system("curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim")
+        :call system("curl -fLo ~/.vim/autoload/plug.vim https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim")
     endif
 
     call plug#begin('~/.vim/plugged')
@@ -26,6 +26,7 @@ set hidden
 set hlsearch
 set ignorecase
 set incsearch
+set laststatus=2
 set list
 set listchars=tab:>>,trail:#,eol:$,extends:>,precedes:<,nbsp:;
 set nobackup
@@ -38,13 +39,13 @@ set showmatch
 set showmode
 set smartcase
 set spell
+set t_Co=256
 set tabstop=4
 set title
 set virtualedit=onemore
 set whichwrap=h,l
 set wildmode=list:longest
 set wrapscan
-set t_Co=256
 
 syntax on
 syntax enable
