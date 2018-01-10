@@ -12,6 +12,7 @@ set hlsearch
 set ignorecase
 set incsearch
 set list
+set listchars=tab:>>,trail:#,eol:$,extends:>,precedes:<,nbsp:;
 set nobackup
 set noswapfile
 set number
@@ -28,7 +29,6 @@ set virtualedit=onemore
 set whichwrap=h,l
 set wildmode=list:longest
 set wrapscan
-set listchars=tab:>>,trail:#,eol:$,extends:>,precedes:<,nbsp:;
 
 syntax on
 syntax enable
@@ -42,11 +42,16 @@ vnoremap <C-e> <esc>
 call plug#begin('~/.vim/plugged')
     Plug 'ctrlpvim/ctrlp.vim'
     Plug 'Yggdroot/indentLine'
+    Plug 'rking/ag.vim'
 call plug#end()
 
-" Setting for Yggdroot/indentLine
 let g:indentLine_faster = 1
 let g:indentLine_char = '|'
 let g:indentLine_leadingSpaceEnabled = 1
 let g:indentLine_leadingSpaceChar = '.'
+
+if executable('ag')
+    let g:ctrlp_use_caching=0
+    let g:ctrlp_user_command='ag -i --nocolor --hidden -g "" %s | sed "s/\^M//g"'
+endif
 
