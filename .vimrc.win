@@ -34,6 +34,7 @@ set nobackup
 set noswapfile
 set number
 set ruler
+set scrolloff=5
 set shiftwidth=4
 set showcmd
 set showmatch
@@ -50,6 +51,8 @@ set wrapscan
 
 syntax on
 syntax enable
+
+autocmd QuickFixCmdPost *grep* cwindow
 
 inoremap { {}<LEFT>
 inoremap [ []<LEFT>
