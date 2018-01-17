@@ -54,25 +54,19 @@ syntax enable
 
 autocmd QuickFixCmdPost *grep* cwindow
 
-nnoremap <BS> :q!<CR>
-vnoremap <BS> :q!<CR>
-inoremap <BS> <ESC>:q!<CR>
-nnoremap <Del> :q!<CR>
-vnoremap <Del> :q!<CR>
-inoremap <Del> <ESC>:q!<CR>
+noremap <BS> :q!<CR>
+noremap! <BS> <ESC>:q!<CR>
+noremap <Del> :q!<CR>
+noremap! <Del> <ESC>:q!<CR>
 
-nnoremap <Up>    :q!<CR>
-vnoremap <Up>    :q!<CR>
-inoremap <Up>    <ESC>:q!<CR>
-nnoremap <Down>  :q!<CR>
-vnoremap <Down>  :q!<CR>
-inoremap <Down>  <ESC>:q!<CR>
-nnoremap <Left>  :q!<CR>
-vnoremap <Left>  :q!<CR>
-inoremap <Left>  <ESC>:q!<CR>
-nnoremap <Right> :q!<CR>
-vnoremap <Right> :q!<CR>
-inoremap <Right> <ESC>:q!<CR>
+noremap <Up>    :q!<CR>
+noremap! <Up>    :q!<CR>
+noremap <Down>  :q!<CR>
+noremap! <Down>  <ESC>:q!<CR>
+noremap <Left>  :q!<CR>
+noremap! <Left>  <ESC>:q!<CR>
+noremap <Right> :q!<CR>
+noremap! <Right> <ESC>:q!<CR>
 
 inoremap { {}<LEFT>
 inoremap [ []<LEFT>
