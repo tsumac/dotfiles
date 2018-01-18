@@ -11,6 +11,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'mattn/emmet-vim'
     Plug 'nathanaelkane/vim-indent-guides'
     Plug 'rking/ag.vim'
+    Plug 'roman/golden-ratio'
     Plug 'tomasr/molokai'
 call plug#end()
 
