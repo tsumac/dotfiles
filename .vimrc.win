@@ -54,18 +54,18 @@ syntax enable
 
 autocmd QuickFixCmdPost *grep* cwindow
 
-noremap <BS> :q!<CR>
+noremap <BS> <ESC>:q!<CR>
 noremap! <BS> <ESC>:q!<CR>
-noremap <Del> :q!<CR>
+noremap <Del> <ESC>:q!<CR>
 noremap! <Del> <ESC>:q!<CR>
 
-noremap <Up>    :q!<CR>
-noremap! <Up>    :q!<CR>
-noremap <Down>  :q!<CR>
-noremap! <Down>  <ESC>:q!<CR>
-noremap <Left>  :q!<CR>
-noremap! <Left>  <ESC>:q!<CR>
-noremap <Right> :q!<CR>
+noremap <Up> <ESC>:q!<CR>
+noremap! <Up> <ESC>:q!<CR>
+noremap <Down> <ESC>:q!<CR>
+noremap! <Down> <ESC>:q!<CR>
+noremap <Left> <ESC>:q!<CR>
+noremap! <Left> <ESC>:q!<CR>
+noremap <Right> <ESC>:q!<CR>
 noremap! <Right> <ESC>:q!<CR>
 
 inoremap { {}<LEFT>
@@ -82,9 +82,8 @@ vnoremap ' "zdi'<C-R>z'<ESC>
 colorscheme molokai
 
 let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_auto_colors = 0
-hi IndentGuidesOdd  ctermbg=gray
-hi IndentGuidesEven ctermbg=darkgrey
+let g:indent_guides_guide_size = 1
+let g:indent_guides_start_level = 2
 
 if executable('ag')
     let g:ctrlp_use_caching=0
