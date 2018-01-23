@@ -56,23 +56,28 @@ syntax enable
 
 autocmd QuickFixCmdPost *grep* cwindow
 
-" Disabled keys
-noremap <BS> <ESC>
-noremap! <BS> <ESC>
-noremap <Del> <ESC>
-noremap! <Del> <ESC>
-noremap <Up> <ESC>
-noremap! <Up> <ESC>
-noremap <Down> <ESC>
-noremap! <Down> <ESC>
-noremap <Left> <ESC>
-noremap! <Left> <ESC>
-noremap <Right> <ESC>
-noremap! <Right> <ESC>
+" Disable keys
+noremap <BS> <ESC>:echo "Disabled!"<CR>
+noremap! <BS> <ESC>:echo "Disabled!"<CR>
+noremap <Del> <ESC>:echo "Disabled!"<CR>
+noremap! <Del> <ESC>:echo "Disabled!"<CR>
+noremap <Up> <ESC>:echo "Disabled!"<CR>
+noremap! <Up> <ESC>:echo "Disabled!"<CR>
+noremap <Down> <ESC>:echo "Disabled!"<CR>
+noremap! <Down> <ESC>:echo "Disabled!"<CR>
+noremap <Left> <ESC>:echo "Disabled!"<CR>
+noremap! <Left> <ESC>:echo "Disabled!"<CR>
+noremap <Right> <ESC>:echo "Disabled!"<CR>
+noremap! <Right> <ESC>:echo "Disabled!"<CR>
 
+" Delete search highlight
 nnoremap <ESC><ESC> :nohlsearch<CR>
 vnoremap <ESC><ESC> :nohlsearch<CR>
 
+" Search selected text
+vnoremap * y/<C-r>"<CR>
+
+" Enclose selected text
 vnoremap { "zdi{<C-R>z}<ESC>
 vnoremap [ "zdi[<C-R>z]<ESC>
 vnoremap ( "zdi(<C-R>z)<ESC>
