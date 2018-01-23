@@ -56,29 +56,27 @@ syntax enable
 
 autocmd QuickFixCmdPost *grep* cwindow
 
-noremap <BS> <ESC>:q!<CR>
-noremap! <BS> <ESC>:q!<CR>
-noremap <Del> <ESC>:q!<CR>
-noremap! <Del> <ESC>:q!<CR>
+" Disabled keys
+noremap <BS> <ESC>
+noremap! <BS> <ESC>
+noremap <Del> <ESC>
+noremap! <Del> <ESC>
+noremap <Up> <ESC>
+noremap! <Up> <ESC>
+noremap <Down> <ESC>
+noremap! <Down> <ESC>
+noremap <Left> <ESC>
+noremap! <Left> <ESC>
+noremap <Right> <ESC>
+noremap! <Right> <ESC>
 
-noremap <Up> <ESC>:q!<CR>
-noremap! <Up> <ESC>:q!<CR>
-noremap <Down> <ESC>:q!<CR>
-noremap! <Down> <ESC>:q!<CR>
-noremap <Left> <ESC>:q!<CR>
-noremap! <Left> <ESC>:q!<CR>
-noremap <Right> <ESC>:q!<CR>
-noremap! <Right> <ESC>:q!<CR>
+nnoremap <ESC><ESC> :nohlsearch<CR>
+vnoremap <ESC><ESC> :nohlsearch<CR>
 
-inoremap { {}<LEFT>
-inoremap [ []<LEFT>
-inoremap ( ()<LEFT>
-inoremap " ""<LEFT>
-inoremap ' ''<LEFT>
-vnoremap { "zdi^V{<C-R>z}<ESC>
-vnoremap [ "zdi^V[<C-R>z]<ESC>
-vnoremap ( "zdi^V(<C-R>z)<ESC>
-vnoremap " "zdi^V"<C-R>z^V"<ESC>
+vnoremap { "zdi{<C-R>z}<ESC>
+vnoremap [ "zdi[<C-R>z]<ESC>
+vnoremap ( "zdi(<C-R>z)<ESC>
+vnoremap " "zdi"<C-R>z"<ESC>
 vnoremap ' "zdi'<C-R>z'<ESC>
 
 colorscheme molokai
