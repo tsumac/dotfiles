@@ -8,3 +8,26 @@ end_of_line = lf
 trim_trailing_whitespace = true
 insert_final_newline = true
 
+[*.yml]
+tab_width = 2
+indent_size = 2
+
+[*.json]
+tab_width = 2
+indent_size = 2
+
+[*.js]
+tab_width = 2
+indent_size = 2
+
+[*.blade.php]
+tab_width = 2
+indent_size = 2
+
+[*.html]
+tab_width = 2
+indent_size = 2
+
+[*.sql]
+tab_width = 2
+indent_size = 2
