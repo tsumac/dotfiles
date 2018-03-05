@@ -36,4 +36,4 @@ alias vi='vim'
 alias less='less -NM'
 export CLICOLOR=1
 export LSCOLORS=DxGxcxdxCxegedabagacad
-
+source ~/.bashrc
