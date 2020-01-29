@@ -13,6 +13,19 @@ insert_final_newline = true
 tab_width = 2
 indent_size = 2
 
+[*.yaml]
+tab_width = 2
+indent_size = 2
+
+[*.go]
+tab_width = 4
+indent_size = 4
+indent_style = tab
+
+[*.toml]
+tab_width = 2
+indent_size = 2
+
 [*.json]
 tab_width = 2
 indent_size = 2
@@ -21,9 +34,17 @@ indent_size = 2
 tab_width = 2
 indent_size = 2
 
+[*.vue]
+tab_width = 2
+indent_size = 2
+
 [*.blade.php]
 tab_width = 2
 indent_size = 2
+
+[*.php]
+tab_width = 4
+indent_size = 4
 
 [*.html]
 tab_width = 2
@@ -32,3 +53,34 @@ indent_size = 2
 [*.sql]
 tab_width = 2
 indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.md.html]
+trim_trailing_whitespace = false
+
+[*.tsv]
+tab_width = 4
+indent_size = 4
+indent_style = tab
+
+[*.es7]
+tab_width = 2
+indent_size = 2
+indent_style = space
+
+[*.ts]
+tab_width = 2
+indent_size = 2
+indent_style = space
+
+[Makefile]
+tab_width = 4
+indent_size = 4
+indent_style = tab
+
+[.rules]
+tab_width = 2
+indent_size = 2
+indent_style = space

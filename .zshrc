@@ -13,7 +13,6 @@ fi
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 setopt list_packed
 zstyle ':completion:*' list-colors ''
-setopt correct
 setopt no_beep
 autoload -Uz vcs_info
 setopt prompt_subst
