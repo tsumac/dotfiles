@@ -1,4 +1,5 @@
 # aliases
+alias ga='git add -p'
 alias gs='git status'
 alias gl='git log'
 alias gb='git branch'
@@ -12,10 +13,13 @@ alias tmpmysql:stop='docker stop $(docker ps | grep tmpmysql | tr -s " " | sed "
 alias tmpmysql:attach='docker exec -it $(docker ps | grep tmpmysql | tr -s " " | sed "s/\s/\n/g" | head -n 1) mysql -uroot'
 alias gg='git log --graph --all --format="%x09%C(cyan bold)%an%Creset%x09%C(yellow)%h%Creset %C(magenta reverse)%d%Creset %s"'
 alias cwd='pwd | pbcopy'
+alias here='HERE=`git branch --show-current` && echo ${HERE}'
+alias lll='ls -lah'
 
 export GOPATH=${HOME}
 export GO111MODULE=on
 export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:${PATH}"
+export PATH="${HOME}/flutter/bin:${PATH}"
 export PATH="${HOME}/.cargo/bin:${PATH}"
 export PATH="${HOME}/bin:${PATH}"
 export PATH="${HOME}/google-cloud-sdk/bin:${PATH}"
