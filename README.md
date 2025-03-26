@@ -1,4 +1,4 @@
-# dotfiles
+# env-files
 
 ## setup
 
@@ -8,10 +8,10 @@ rm -f ~/.editorconfig
 rm -f ~/.vimrc
 rm -f ~/.zshrc
 
-ln -s dotfiles/.bashrc ~/.bashrc
-ln -s dotfiles/.editorconfig ~/.editorconfig
-ln -s dotfiles/.vimrc ~/.vimrc
-ln -s dotfiles/.zshrc ~/.zshrc
+ln -s ~/src/github.com/tsumac/env-files/dotfiles/.bashrc ~/.bashrc
+ln -s ~/src/github.com/tsumac/env-files/dotfiles/.editorconfig ~/.editorconfig
+ln -s ~/src/github.com/tsumac/env-files/dotfiles/.vimrc ~/.vimrc
+ln -s ~/src/github.com/tsumac/env-files/dotfiles/.zshrc ~/.zshrc
 
 rm -f ~/Library/Application\ Support/Code/User/keybindings.json
 rm -f ~/Library/Application\ Support/Cursor/User/keybindings.json
