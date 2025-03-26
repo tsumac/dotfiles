@@ -1,0 +1,15 @@
+// 既定値を上書きするには、このファイル内にキー バインドを挿入します
+[
+  {
+    "key": "cmd+k cmd+s",
+    "command": "workbench.action.files.saveWithoutFormatting"
+  },
+  {
+    "key": "alt+cmd+,",
+    "command": "editor.emmet.action.balanceOut"
+  },
+  {
+    "key": "alt+cmd+.",
+    "command": "editor.emmet.action.balanceIn"
+  }
+]

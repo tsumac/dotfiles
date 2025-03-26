@@ -4,7 +4,7 @@ alias gs='git status'
 alias gl='git log'
 alias gb='git branch'
 alias gp='git push origin HEAD'
-alias dc='docker-compose'
+alias dc='docker compose'
 alias u='cd ..'
 alias o='open .'
 alias resterm='echo c'
@@ -18,6 +18,7 @@ alias lll='ls -lah'
 
 export GOPATH=${HOME}
 export GO111MODULE=on
+export PATH="/opt/homebrew/bin:${PATH}"
 export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:${PATH}"
 export PATH="${HOME}/flutter/bin:${PATH}"
 export PATH="${HOME}/.cargo/bin:${PATH}"
