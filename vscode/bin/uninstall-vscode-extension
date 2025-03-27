@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cursor --uninstall-extension "$1"
+code --uninstall-extension "$1"
+
+echo "Uninstalled complete."

@@ -18,13 +18,14 @@ alias lll='ls -lah'
 
 export GOPATH=${HOME}
 export GO111MODULE=on
-export PATH="/opt/homebrew/bin:${PATH}"
-export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:${PATH}"
-export PATH="${HOME}/flutter/bin:${PATH}"
-export PATH="${HOME}/.cargo/bin:${PATH}"
-export PATH="${HOME}/bin:${PATH}"
-export PATH="${HOME}/google-cloud-sdk/bin:${PATH}"
-export PATH="${HOME}/Library/Python/3.7/bin:${PATH}"
-export PATH="./node_modules/.bin:${PATH}"
+export PATH=$PATH:/opt/homebrew/bin
+export PATH=$PATH:/usr/local/opt/gnu-sed/libexec/gnubin
+export PATH=$PATH:${HOME}/flutter/bin
+export PATH=$PATH:${HOME}/.cargo/bin
+export PATH=$PATH:${HOME}/bin
+export PATH=$PATH:${HOME}/google-cloud-sdk/bin
+export PATH=$PATH:${HOME}/Library/Python/3.7/bin
+export PATH=$PATH:./node_modules/.bin
+export PATH=$PATH:${HOME}/src/github.com/tsumac/env-files/vscode/bin
 
 source ${HOME}/.nvm/nvm.sh

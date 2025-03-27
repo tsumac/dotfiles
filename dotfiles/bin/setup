@@ -1,0 +1,15 @@
+#!/bin/bash
+
+SELF_PATH=$(cd $(dirname $0); pwd)
+
+rm -f ~/.bashrc
+rm -f ~/.editorconfig
+rm -f ~/.vimrc
+rm -f ~/.zshrc
+
+ln -s ${SELF_PATH}/../.bashrc ~/.bashrc
+ln -s ${SELF_PATH}/../.editorconfig ~/.editorconfig
+ln -s ${SELF_PATH}/../.vimrc ~/.vimrc
+ln -s ${SELF_PATH}/../.zshrc ~/.zshrc
+
+echo "Setup dotfiles completed."

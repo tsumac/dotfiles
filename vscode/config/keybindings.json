@@ -11,5 +11,10 @@
   {
     "key": "alt+cmd+.",
     "command": "editor.emmet.action.balanceIn"
+  },
+  {
+    "key": "cmd+k m",
+    "command": "workbench.action.editor.changeLanguageMode",
+    "when": "!notebookEditorFocused"
   }
 ]

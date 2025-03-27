@@ -1,0 +1,20 @@
+#!/bin/bash
+
+vscode_extensions=$(code --list-extensions)
+cursor_extensions=$(cursor --list-extensions)
+
+for ext in $vscode_extensions; do
+  if [[ ! " $cursor_extensions " =~ " $ext " ]]; then
+    echo "Installing $ext in Cursor..."
+    cursor --install-extension "$ext"
+  fi
+done
+
+for ext in $cursor_extensions; do
+  if [[ ! " $vscode_extensions " =~ " $ext " ]]; then
+    echo "Installing $ext in VS Code..."
+    code --install-extension "$ext"
+  fi
+done
+
+echo "Synchronization complete."

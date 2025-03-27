@@ -1,0 +1,15 @@
+#!/bin/bash
+
+SELF_PATH=$(cd $(dirname $0); pwd)
+
+rm -f ~/Library/Application\ Support/Code/User/keybindings.json
+rm -f ~/Library/Application\ Support/Cursor/User/keybindings.json
+rm -f ~/Library/Application\ Support/Code/User/settings.json
+rm -f ~/Library/Application\ Support/Cursor/User/settings.json
+
+cp ${SELF_PATH}/../config/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+cp ${SELF_PATH}/../config/keybindings.json ~/Library/Application\ Support/Cursor/User/keybindings.json
+cp ${SELF_PATH}/../config/settings.json ~/Library/Application\ Support/Code/User/settings.json
+cp ${SELF_PATH}/../config/settings.json ~/Library/Application\ Support/Cursor/User/settings.json
+
+echo "Setup vscode (and cursor) config completed."
